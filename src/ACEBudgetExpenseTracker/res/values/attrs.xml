@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ 	<declare-styleable name="TransactionLinearLayout">
+       <attr name="transaction_uid" format="integer" />
+       <attr name="company_name" format="string" />
+       <attr name="date" format="string" />
+       <attr name="isDebit" format="boolean" />
+       <attr name="amount" format="float" />
+       <attr name="balance" format="float" />
+   </declare-styleable>  
+   <declare-styleable name="AccountLinearLayout">
+       <attr name="account_uid" format="integer" />
+       <attr name="title" format="string" />
+       <attr name="account_balance" format="float" />
+   </declare-styleable>    
+</resources>

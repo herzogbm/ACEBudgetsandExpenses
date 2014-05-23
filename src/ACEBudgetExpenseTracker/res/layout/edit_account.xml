@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <com.google.ads.AdView
+        android:id="@+id/ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="AD_UNIT_ID_GOES_HERE"
+        ads:loadAdOnCreate="true"
+        ads:testDevices="TEST_EMULATOR,TEST_DEVICE_ID_GOES_HERE" />
+
+    <TextView
+        android:id="@+id/label_account_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_ID" />
+
+    <EditText
+        android:id="@+id/input_account_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number" 
+        android:hint="@string/text_hint_ID"/>
+
+    <TextView
+        android:id="@+id/label_account_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_account_name" />
+    
+    <EditText
+        android:id="@+id/input_account_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10" 
+        android:inputType="textPersonName"
+        android:hint="@string/text_hint_account_name">
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/label_account_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_account_description" />
+
+    <EditText
+        android:id="@+id/input_account_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/text_label_account_description"
+        android:inputType="textCapSentences|textMultiLine" />
+
+    <TextView
+        android:id="@+id/label_account_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_account_type" />
+
+    <Spinner
+        android:id="@+id/input_account_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/items_account_type"
+        android:prompt="@string/text_label_account_type" />
+
+    <TextView
+        android:id="@+id/label_account_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_account_balance" />
+
+    <EditText
+        android:id="@+id/input_account_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/label_interest_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_account_interest_rate" />
+
+    <EditText
+        android:id="@+id/input_account_interest_rate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/label_account_providor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_account_providor" />
+
+    <EditText
+        android:id="@+id/input_account_providor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+</LinearLayout>

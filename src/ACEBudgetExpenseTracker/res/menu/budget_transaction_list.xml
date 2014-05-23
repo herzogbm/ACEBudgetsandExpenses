@@ -1,0 +1,24 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/action_prev"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/previous_item"
+        android:title="Prev"/>
+    
+    <item
+        android:id="@+id/action_next"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/next_item"
+        android:title="Next"/>
+    
+    <item
+        android:id="@+id/action_add"
+        android:orderInCategory="100"
+        android:showAsAction="always"
+        android:icon="@drawable/newcontent"
+        android:title="Add"/>
+
+</menu>

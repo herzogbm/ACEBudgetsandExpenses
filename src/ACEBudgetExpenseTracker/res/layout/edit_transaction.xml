@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="vertical" >
+    
+    <com.google.ads.AdView
+        android:id="@+id/ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="AD_UNIT_ID_GOES_HERE"
+        ads:loadAdOnCreate="true"
+        ads:testDevices="TEST_EMULATOR,TEST_DEVICE_ID_GOES_HERE" />
+
+    <TextView
+        android:id="@+id/label_transaction_ID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_ID" />
+
+    <EditText
+        android:id="@+id/input_transaction_ID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:enabled="false"
+        android:inputType="number" 
+        android:hint="@string/text_hint_ID"/>
+
+    <TextView
+        android:id="@+id/label_transaction_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_account_description" />
+
+    <EditText
+        android:id="@+id/input_transaction_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="@string/text_label_account_description" />
+
+    <TextView
+        android:id="@+id/label_transaction_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_transaction_date" />
+
+    <EditText
+        android:id="@+id/input_transaction_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/label_transaction_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_account" />
+    
+    <Spinner
+        android:id="@+id/input_transaction_account_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <CheckBox
+        android:id="@+id/input_is_debit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_transaction_checkbox" />
+
+    <TextView
+        android:id="@+id/label_transaction_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_transaction_amount" />
+
+    <EditText
+        android:id="@+id/input_transaction_amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="numberDecimal" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_label_transaction_budget" />
+
+    <Spinner
+        android:id="@+id/input_transaction_budget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
